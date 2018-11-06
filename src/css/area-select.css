@@ -1,0 +1,136 @@
+.select-container {
+    position: relative;
+    width: 143px;
+    height: 40px;
+    border-radius: 5px;
+    float: left;
+    background: url(../images/selcetBG.png) center no-repeat;
+    margin-left: 10px;
+}
+@font-face
+{
+    font-family: PingFangBold;
+    src: url('../font/PingFang Bold.ttf');
+}@font-face
+{
+    font-family: PingFangHeavy;
+    src: url('../font/PingFang Heavy.ttf');
+}@font-face
+{
+    font-family: PingFangLight;
+    src: url('../font/PingFang Light.ttf');
+}@font-face
+{
+    font-family: PingFangMedium;
+    src: url('../font/PingFang Medium.ttf');
+}@font-face
+{
+    font-family: PingFangRegular;
+    src: url('../font/PingFang Regular.ttf');
+}@font-face
+{
+    font-family: PingFangExtraLight;
+    src: url('../font/PingFang ExtraLight.ttf');
+}
+.select-container:hover {
+    cursor: pointer;
+}
+
+.select-container-head:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/arrow-down.png) center no-repeat;
+    /*border: solid 1px red;*/
+}
+
+.currentValue {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    background: #102141;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: PingFangMedium;
+    color:#126497;
+    margin-top: 4px;
+    margin-left: -16px;
+}
+
+.select-item-container {
+    margin-left: 2px;
+    z-index: 2;
+    width: 140px;
+    background: #12234D;
+    border: solid 1px #06538f;
+}
+.select-item-container ul{
+    max-height: 294px;
+    margin: 5px 0px 10px 10px;
+    padding-right: 10px;
+}
+.select-item-container li{
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: left;
+    font-family:PingFangMedium;
+    color: #15a7f1;
+}
+
+.cityTips, .cityitem,
+.provinceTips, .provinceitem {
+    font-size: 16px;
+    color: #168fcd;
+}
+
+.provinceTips:hover,
+.cityTips:hover {
+    background: #06538f;
+}
+
+.select-item-container {
+    display: none;
+}
+.select-container-head.validSelect input{
+    color:#15a7f1;
+}
+.cityitem:hover, .provinceitem:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #06538f;
+}
+
+.container-header h3 {
+    position: absolute;
+    width: 1920px;
+    color: #fff;
+    margin: auto;
+    line-height: 74px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.select-item {
+    font-size: 16px;
+    color: #168fcd;
+}
+
+.select-item:hover {
+    color: #FFFFFF;
+    background: #06538F;
+}
+.ps {
+    overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+}
+
+.pos-r, .pos-relative, .Posr {
+    position: relative;
+}

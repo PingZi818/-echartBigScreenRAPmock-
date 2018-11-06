@@ -1,0 +1,442 @@
+@font-face
+{
+    font-family: PingFangBold;
+    src: url('../font/PingFang Bold.ttf');
+}@font-face
+{
+    font-family: PingFangHeavy;
+    src: url('../font/PingFang Heavy.ttf');
+}@font-face
+{
+    font-family: PingFangLight;
+    src: url('../font/PingFang Light.ttf');
+}@font-face
+{
+    font-family: PingFangMedium;
+    src: url('../font/PingFang Medium.ttf');
+}@font-face
+{
+    font-family: PingFangRegular;
+    src: url('../font/PingFang Regular.ttf');
+}@font-face
+{
+    font-family: PingFangExtraLight;
+    src: url('../font/PingFang ExtraLight.ttf');
+}
+.container-content{
+    padding: 0px 15px;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+.content {
+    float: left;
+    width: 100%;
+}
+.main {
+    margin-left: 540px;
+    margin-right: 530px;
+}
+/*用于清除浮动*/
+.main::after {
+    display: block;
+    content: '';
+    font-size: 0;
+    height: 0;
+    clear: both;
+    zoom: 1;
+}
+.left {
+    float: left;
+    width: 530px;
+    margin-left: -100%;
+}
+.right {
+    width: 520px;
+    float: right;
+    margin-left: -530px;
+}
+.selectDom {
+    top: 38px;
+}
+/* 综合样式 */
+.map-course,.course-analysis, .class-build, .living-status, .sg-distribution, .teaching-analysis, .this-week, .grand{
+    position:relative;
+    border: solid 2px #081f3c;
+}
+.course-analysis, .living-status, .sg-distribution, .this-week, .grand{
+    position:relative;
+    margin-top: 10px;
+    border: solid 2px #081f3c;
+}
+/* left */
+.class-build{
+    width:530px;
+    height:297px;
+    background: url('../images/left-top4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.living-status{
+    width:530px;
+    height:362px;
+    background: url('../images/left-center4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.sg-distribution{
+    width:530px;
+    height:310px;
+    background: url('../images/left-bottom4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+/* center */
+.map-course{
+    height:670px;
+    background: url('../images/center-top4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.course-analysis{
+    height:310px;
+    background: url('../images/center-bottom4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.course-analysis .com-screen-content{
+    position: relative;
+    top: -34px;
+}
+
+/* right */
+.teaching-analysis{
+    width:520px;
+    height:297px;
+    background: url('../images/right-top4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.this-week{
+    width:520px;
+    height:246px;
+    background: url('../images/right-center4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.grand{
+    width:520px;
+    height:427px;
+    background: url('../images/right-bottom4.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.filter-type{
+    font-size: 0;
+    text-align: center;
+}
+.r-c-count{
+    padding: 18px 0 0 0px;
+    text-align: center;
+}
+.rc-item{
+    display: inline-block;
+    width: 180px;
+    margin-left: 36px;
+}
+.rc-item:nth-child(3){
+    width:120px;
+}
+.rc-item:first-child{
+    margin-left:0px;
+}
+.rc-item h5{
+    color:#16a5f0;
+    font-size: 16px;
+    font-family: PingFangMedium;
+    text-align: left;
+}
+.rc-item:last-child{
+    margin-right:0;
+}
+.re-all-data{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 0;
+}
+.re-all-data li{
+    display: inline-block;
+    width:30px;
+    text-align:center ;
+    color:#fff;
+    font-family: myFirstFont;
+    font-size: 35px;
+    background:url("../images/center-data.jpg") center no-repeat;
+}
+.status-data,.status-name{
+    text-align: center;
+    font-size: 0;
+}.status-name{
+     margin-top: -3px;
+}
+.status-data{
+    margin-top: 5px;
+}
+.status-data li{
+    display: inline-block;
+    width:118px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height:50px;
+    color:white;
+    margin-right: 10px;
+    font-family: myFirstFont;
+    font-size: 36px;
+    line-height: 50px;
+    background: url("../images/fourCor.png") center no-repeat;
+}
+.status-data li:last-child,.status-name li:last-child{
+    margin-right: 0;
+}
+.status-name li{
+    display: inline-block;
+    width: 118px;
+    margin-right: 10px;
+    padding: 8px 0;
+    color: #1bb9f9;
+    font-family: PingFangMedium;
+    font-size: 16px;
+}
+.bottom-data-count{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:7px;
+}
+.bottom-data-count li{
+    display: inline-block;
+    width:150px;
+    height:60px;
+}
+.bottom-data-count li p{
+    color:#fff;
+    font-family: PingFangMedium;
+    font-size: 36px;
+    max-width: 150px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+.bottom-data-count li span{
+    color:#1bb4f9;
+    font-size: 16px;
+    display: block;
+    margin-top: -5px;
+}
+.class-build-left{
+    position: absolute;
+    width:50%;
+    left:0;
+    top:10px;
+}
+.class-build-right{
+    position: absolute;
+    width:50%;
+    right:0;
+    top:10px;
+}
+.living-status-left{
+    position: absolute;
+    width:50%;
+    left:0;
+    top:176px;
+}
+.living-status-right{
+    position: absolute;
+    width:50%;
+    right:-10px;
+    top:176px;
+}
+#baseTrimesterContainer{
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    border:none;
+    z-index:1000;
+    overflow: hidden;
+}
+#baseTrimesterContainer select option{
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+}
+#baseTrimesterContainer select{
+    width: 193px;
+    height: 30px;
+    line-height: 30px;
+    background:#12305b url("../images/select.jpg") center no-repeat;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 16px;
+    font-family: PingFangBold;
+    color: #1bb4f9;
+    border: none;
+    outline: none;
+    padding: 0 32px 0 10px;
+    border-radius: 5px;
+}
+.center{
+    text-align: center;
+}
+.status_title {
+    width: 120px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    left: 20px;
+    color: #1bb9f9;
+    margin-top: 32px;
+    position: relative;
+    margin-bottom: 2px;
+}
+.status_title span{
+    font-family: myFirstFont;
+    font-size: 36px;
+    position: absolute;
+    left: -14px;
+    transform: translate(5%,-32%);
+    top: -7px;
+    height: 44px;
+    width: 68px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+}
+.status_title p{
+    position: relative;
+    transform: translateY(-33%);
+    font-family: PingFangBold;
+    font-size: 16px;
+}
+.this-week .com-screen-content{
+    margin-top: -15px;
+}
+.course ul{
+    margin-top: -71px;
+    margin-left: 153px;
+}
+.course ul li{
+    text-align: center;
+    height: 36px;
+}
+.course.use-rate{
+    margin-top: 48px;
+}
+.data-count span{
+    width: 168px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 28px;
+    font-family: myFirstFont;
+    font-size: 36px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+}
+.status span {
+    width: 168px;
+    display: inline-block;
+    line-height: 54px;
+    font-size: 16px;
+    font-family: PingFangMedium;
+    color: #7e9bc6;
+    float: left;
+}
+.echart-title{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 18px;
+    font-size: 0;
+}
+.echart-title li{
+    width: 50%;
+    display: inline-block;
+    color: #1bb9f9;
+    font-size: 18px;
+    font-family: PingFangBold;
+}.echart-text{
+    position: relative;
+    text-align: center;
+    bottom: -62px;
+    font-size: 0;
+    z-index: 0;
+}
+ .teaching-analysis .echart-text{
+     bottom: -54px;
+ }
+.echart-text li{
+    width:50%;
+    display: inline-block;
+    color:#1bb9f9;
+    font-size: 18px;
+}
+.echart-text li span{
+    color:#fff;
+    font-size: 20px;
+    font-family: PingFangMedium;
+}
+.class-build .echart-text li:nth-child(1) p{
+    font-family: myFirstFont;
+    font-size: 42px;
+    background-image:-webkit-gradient(linear, 0 0, 0 bottom, from(#1ad1fc), to(#1d69f1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.echart-text li:nth-child(2) p{
+    font-family: myFirstFont;
+    font-weight: 800;
+    font-size: 42px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#cc523b), to(#ff2f64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}.echart-text li:nth-child(1) p{
+     font-family: myFirstFont;
+     font-weight: 800;
+     font-size: 42px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#1ac7fb), to(#1d6df1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mt10{
+    margin-top: 10px;
+}
+.yLName{
+    position: absolute;
+    top: 47px;
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    font-family: PingFangMedium;
+    left: 15px;
+}
+.yRName{
+    position: absolute;
+    bottom: 19px;
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    font-family: PingFangMedium;
+    right: 8px;
+}
+.yRTName{
+    position: absolute;
+    top: 47px;
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    font-family: PingFangMedium;
+    right: 15px;
+}
+.grandYlName{
+    position: absolute;
+    bottom: 11px;
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    font-family: PingFangMedium;
+    left: 96px;
+}
+.filter-type li{
+    width:177px;
+}

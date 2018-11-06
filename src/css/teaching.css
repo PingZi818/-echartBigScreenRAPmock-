@@ -1,0 +1,386 @@
+@font-face
+{
+    font-family: PingFangBold;
+    src: url('../font/PingFang Bold.ttf');
+}@font-face
+{
+    font-family: PingFangHeavy;
+    src: url('../font/PingFang Heavy.ttf');
+}@font-face
+{
+    font-family: PingFangLight;
+    src: url('../font/PingFang Light.ttf');
+}@font-face
+{
+    font-family: PingFangMedium;
+    src: url('../font/PingFang Medium.ttf');
+}@font-face
+{
+    font-family: PingFangRegular;
+    src: url('../font/PingFang Regular.ttf');
+}@font-face
+{
+    font-family: PingFangExtraLight;
+    src: url('../font/PingFang ExtraLight.ttf');
+}
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('../font/Fette-Engschrift.ttf');
+}
+.container-content{
+    padding: 14px 15px;
+    box-sizing: border-box;
+}
+.content {
+    float: left;
+    width: 100%;
+}
+.main {
+    margin-left: 0;
+    margin-right: 575px;
+}
+/*用于清除浮动*/
+.main::after {
+    display: block;
+    content: '';
+    font-size: 0;
+    height: 0;
+    clear: both;
+    zoom: 1;
+}
+.left {
+    float: left;
+    width: 0;
+    margin-left: -100%;
+}
+.right {
+    width: 565px;
+    float: right;
+    margin-left: -575px;
+    overflow: hidden;
+}
+
+.selectDom {
+    top: 38px;
+}
+/* 综合样式 */
+.resource-count-pic,.resource-origin,.resource-right,.school-rank,.resource-using{
+    position:relative;
+    box-sizing: border-box;
+}
+.left-top-content{
+    height:650px;
+}
+.resource-using{
+    width:45.3%;
+    height:650px;
+    background: url('../images/left-top2.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.resource-using.noData{
+    background: url('../images/teaching_nodata.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.resource-right{
+    position: relative;
+    width:54%;
+    height:650px;
+    background:url('../images/teaching-resource.gif') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.resource-count-pic{
+    margin-top: 10px;
+    height:306px;
+    background: url('../images/left-bottom2.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.resource-origin{
+    background: url('../images/right-top2.jpg') center no-repeat;
+    width: 560px;
+    height:506px;
+    background-size: 100% 100%;
+}
+.school-rank{
+    margin-top: 10px;
+    background: url('../images/right-bottom2.png') center no-repeat;
+    height:450px;
+    width:560px;
+    background-size: 100% 100%;
+}
+.use-data{
+    text-align: center;
+    padding: 6px 0 14px 0;
+    margin: 0 10px;
+    height: 55px;
+    background: url(../images/resource-use-data.jpg) 100% 100% no-repeat;
+    background-size: 100% 100%;
+    border-right: 0;
+    border-left: 0;
+}
+.use-data li{
+    width:178px;
+    font-size: 0;
+    display: inline-table;
+    border-right:solid 1px #1f4191;
+}
+.use-data li:last-child{
+    border-right:0;
+}
+.use-data .data-count{
+    color:#fff;
+    max-width: 178px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family:myFirstFont ;
+    height: 41px;
+    font-size: 35px;
+}
+.use-data .data-name{
+    color:#1bb9f9;
+    font-size: 12px;
+}
+.canvas-pic-two{
+    position: relative;
+    top: 12px;
+}
+.canvas-pic-two .data-label{
+    position: absolute;
+    left:20px;
+    top:15px;
+    z-index: 100;
+}
+.canvas-pic-two .utilization-rate{
+    position: absolute;
+    right:20px;
+    top:16px;
+    z-index: 100;
+}
+.canvas-pic-two .utilization-rate li{
+    width:120px;
+    padding:10px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: url("../images/teach-cornor.png") center no-repeat;
+}
+.utilization-rate p{
+    font-size: 36px;
+    font-family: myFirstFont;
+    color:#fff;
+}
+.utilization-rate span{
+    font-size: 16px;
+    color:#1aafed;
+}
+.canvas-pic-two .data-label li{
+    width: 120px;
+    padding-bottom: 25px;
+     text-align: center;
+    font-size: 17px;
+    color: #828c9d;
+}
+.canvas-pic-two .data-label li:hover, .canvas-pic-two .data-label li.active{
+    color: #fff;
+    font-size: 18px;
+    font-family: PingFangMedium;
+    background: url("../images/choose-item.png") center no-repeat;
+}
+.filter-type{
+    font-size: 0;
+    text-align: center;
+}
+.filter-type li {
+
+    font-family: PingFangHeavy;
+}
+.data-label li:hover{
+    cursor:pointer;
+}
+.active-data-label{
+    position: absolute;
+    color:#fff;
+    margin: auto;
+    font-size:18px;
+    left:57%;
+    transform:translateX(-50%);
+    bottom:48px;
+    z-index: 2;
+}
+.data-sum-title{
+    position: absolute;
+    color: #fff;
+    margin: auto;
+    font-size: 17px;
+    left: 58%;
+    transform: translateX(-54%);
+    bottom: 142px;
+    z-index: 2;
+}
+.data-sum{
+    position: absolute;
+    color:#fff;
+    margin: auto;
+    left:57%;
+    font-family: myFirstFont;
+    font-size: 42px;
+    transform: translateX(-44%);
+    bottom: 93px;
+    z-index: 2;
+}
+.resource-right .com-count-title {
+    font-size: 17px;
+    margin-left: 10px;
+    padding: 20px 0px 0px 30px;
+    font-family: PingFangBold;
+}
+
+.re-all-data{
+    margin-top: 10px;
+}
+.re-all-data li{
+    display: inline-block;
+    width:30px;
+    text-align:center ;
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    font-family: myFirstFont;
+    font-size: 34px;
+    background:url("../images/center-data.jpg") center no-repeat;
+}
+.re-top-right{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.six-border{
+    position: relative;
+    padding: 30px 60px;
+    font-size: 0;
+}
+.six-border .data-type{
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    color:#16aefa;
+}
+.six-border .data-type-two{
+    position: absolute;
+    bottom: 12px;
+    left: 48px;
+    color:#16aefa;
+}
+.six-border li{
+    position: relative;
+    width: 80px;
+    height:90px;
+    padding: 35px 0;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+    display: inline-block;
+    margin-left:50px;
+    box-sizing: border-box;
+    text-indent:0;
+}
+
+.six-border .top{
+    position: absolute;
+    top:-40px;
+    left:0;
+    width:80px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.six-border .bottom{
+    position: absolute;
+    bottom:-40px;
+    left:0;
+    width:80px;
+    font-size: 18px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-indent: 0;
+}
+body{
+    min-width: 1900px;
+}
+.inner-pie{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-34%,20%);
+    width: 100px;
+    height: 130px;
+}
+.inner-pie td{
+    max-width: 58px;
+    min-width: 50px;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.inner-pie table{
+    width: 100%;
+    height: 100%;
+    color:#b8c35b;
+    font-size: 18px;
+}
+.ylName {
+    position: absolute;
+    top: 55px;
+    color: #90979c;
+    font-size: 12px;
+    font-family: PingFangMedium;
+    left: 20px;
+}
+.yrName {
+    position: absolute;
+    top: 55px;
+    color: #90979c;
+    font-size: 12px;
+    font-family: PingFangMedium;
+    right: 28px;
+}
+.rYName{
+    position: absolute;
+    top: 36px;
+    color: #7e9bc6;
+    font-family: PingFangMedium;
+    font-size: 14px;
+    right: 18px;
+}
+
+.filter-type li{
+    width:177px;
+}
+.resource-origin .com-screen-content span{
+    position: absolute;
+    color:#1bb9f9;
+    font-family: PingFangRegular;
+    transform:rotate(45deg);
+    font-size: 12px;
+    z-index: 1;
+}
+.rangeone{
+    top: 228px;
+    right: 230px;
+}
+.rangetwo{
+    top: 200px;
+    right: 206px;
+}
+.rangethr{
+    top: 170px;
+    right: 178px;
+}
+.rangefou{
+    top: 143px;
+    right: 151px;
+
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>课堂行为</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/course-doing.css">
+    <link rel="stylesheet" href="css/area-select.css">
+</head>
+<body>
+<div class="container-header">
+    <ul class="nowTime">
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="location">
+    </div>
+    <h3 id="titleContainer"></h3>
+</div>
+<div class="container-content">
+    <div class="content">
+        <div class="main">
+            <div class="count-course">
+                <div class="r-c-count">
+                    <div class="rc-item">
+                        <h5>累计开课总量</h5>
+                        <ul class="re-all-data allCourseCnt">
+                            <li>0</li>
+                        </ul>
+                    </div>
+                    <div class="rc-item">
+                        <h5>Rt平均值</h5>
+                        <ul class="re-all-data chAvg">
+                            <li>0</li>
+                        </ul>
+                    </div>
+                    <div class="rc-item">
+                        <h5>Ch平均值</h5>
+                        <ul class="re-all-data rtAvg">
+                            <li>0</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="com-screen-content">
+                    <div id="main3" style="width:100%;height:420px;"></div>
+                </div>
+                <span class="left-top"></span>
+                <span class="right-top"></span>
+                <span class="left-bottom"></span>
+                <span class="right-bottom"></span>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <div class="subject-distribution">
+            <div class="com-count-title">年级分布</div>
+            <div class="com-screen-content">
+                <div class="no-data"></div>
+                <div id="main1" style="width:100%;height:478px;top: -48px;"></div>
+            </div>
+            <span class="left-top"></span>
+            <span class="right-top"></span>
+            <span class="left-bottom"></span>
+            <span class="right-bottom"></span>
+        </div>
+        <div class="grade-distribution">
+            <div class="com-count-title">学科分布</div>
+            <div class="com-screen-content" style="position:relative;top: -53px;">
+                <div class="no-data"></div>
+                <div id="main2" style="width:100%;height:410px;"></div>
+            </div>
+            <span class="left-top"></span>
+            <span class="right-top"></span>
+            <span class="left-bottom"></span>
+            <span class="right-bottom"></span>
+        </div>
+    </div>
+    <div class="right">
+        <div class="student-favorite">
+            <div class="com-count-title">学生偏好</div>
+            <div class="com-screen-content">
+                <div class="no-data"></div>
+                <div class="dataRange"></div>
+                <div id="main5" style="width:100%;height:494px;top: -54px;"></div>
+            </div>
+            <span class="left-top"></span>
+            <span class="right-top"></span>
+            <span class="left-bottom"></span>
+            <span class="right-bottom"></span>
+
+        </div>
+        <div class="teacher-rank">
+            <div class="com-count-title">教师排行榜</div>
+            <div class="com-screen-content">
+                <div class="no-data"></div>
+                <div class="axisxy-title">
+                    <span class="xName">课程数</span>
+                    <span class="yName">-好评率-</span>
+                </div>
+
+                <div id="main6" style="width:100%;height:376px;top:-16px;"></div>
+            </div>
+            <span class="left-top"></span>
+            <span class="right-top"></span>
+            <span class="left-bottom"></span>
+            <span class="right-bottom"></span>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script type="text/javascript">
+    var bigScreenPage = 'behaviorAnalysisPage';
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/echarts-wordcloud.min.js"></script>
+<script src="js/rootPath.js"></script>
+<script src="js/backgroundInfo.js"></script>
+<script src="js/common.js"></script>
+<script src="js/areaSelectComponent.js"></script>
+<script src="js/niceScroll.min.js"></script>
+<script src="js/course-doing.js"></script>
+</body>
+</html>
